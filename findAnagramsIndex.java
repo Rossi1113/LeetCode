@@ -6,6 +6,7 @@ public class findAnagramsIndex {
     public static void main(String[] args){
         String s = "cbaebabacd";
         String p = "abc";
+        findAnagrams(s,p);
         findAnagrams2(s,p);
     }
     //This is typical brute force solution.
@@ -38,6 +39,7 @@ public class findAnagramsIndex {
         }
         return true;
     }
+
     // solve with sliding window.
     public static List<Integer> findAnagrams2(String s, String p) {
         List<Integer> res = new ArrayList<>();
